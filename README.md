@@ -2,7 +2,7 @@
 <a href="https://www.jianshu.com/p/ad5a55de78cf" target="_blank">详细使用介绍见简书</a>
 
 # 一、NodeServe--node搭建的express+body-parser服务
-<a href="https://segmentfault.com/a/1190000020989763?utm_source=tag-newest" target="_blank">express+body-parser</a>
+[express+body-parser](https://segmentfault.com/a/1190000020989763?utm_source=tag-newest?_blank)
 1. 安装supervisor: npm install supervisor -g
 2. 安装依赖包：npm i
 3. 启动命令: supervisor app.js
@@ -52,9 +52,9 @@ Mock.mock(/\/apis\/list.*/, 'get', () => {})
 ***
 # 四、body-parser
 1. 安装body-parser: npm i body-parser -S
-2. <a href="https://blog.csdn.net/hl971115/article/details/92412501" target="_blank">可以在vue.config.js中直接写，但是效果不好，每次更改都要重启~</a>
-3. <a href="https://segmentfault.com/a/1190000020989763?utm_source=tag-newest" target="_blank">body-parser,需要node和NodeService差不多（暂未完成）</a>
-4. <a href="https://segmentfault.com/a/1190000022547716" target="_blank">body-parser配置</a>
+2. [可以在vue.config.js中直接写，但是效果不好，每次更改都要重启~](https://blog.csdn.net/hl971115/article/details/92412501?_blank)
+3. [body-parser,需要node和NodeService差不多（暂未完成）](https://segmentfault.com/a/1190000020989763?utm_source=tag-newest?_blank)
+4. [body-parser配置](https://segmentfault.com/a/1190000022547716?_blank)
 
 ***
 # 五、xl_mock
