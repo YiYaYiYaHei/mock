@@ -1,5 +1,5 @@
 前端mock数据
-<a href="https://www.jianshu.com/p/ad5a55de78cf" target="_blank">详细使用介绍见简书</a>
+[详细使用介绍见简书](https://www.jianshu.com/p/ad5a55de78cf?_blank)
 
 # 一、NodeServe--node搭建的express+body-parser服务
 [express+body-parser](https://segmentfault.com/a/1190000020989763?utm_source=tag-newest?_blank)
