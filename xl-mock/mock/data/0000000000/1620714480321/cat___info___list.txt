@@ -1,0 +1,1 @@
+{"apiName":"列表","apiDesp":"","apiMethod":"post","list":[{"name":"status","spec":"","val":"200","desp":"","is":"1","type":"number"},{"name":"data","spec":"","val":"","desp":"","is":"1","type":"string"}],"cateId":"0000000000","id":"1620714480321","apiUrl":"/apis/list","jsonData":"{\"data\": []}","json":{"data":[]}}

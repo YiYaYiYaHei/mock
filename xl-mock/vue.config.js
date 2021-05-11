@@ -4,13 +4,7 @@ const path = require("path"),
     isPRD = env === "production",
     publicPath = '/',
     outputDir = 'dist',
-    title = "左侧菜单",
-    bodyParser = require("body-parser"); // mock数据
-
-let feMock;
-if (!isPRD) {
-  feMock = require("./mockApi/index.js");
-}
+    title = "左侧菜单";
 
 const config = {
   publicPath,
@@ -76,20 +70,11 @@ const config = {
     hotOnly: false,
     proxy: {
         "/apis": {
-            target: "http://localhost:2048/apis",
+            target: "http://127.0.0.1:2048/apis",
             pathRewrite: {"^/apis": ""},
             secure: false
         }
-    },
-    /* // 开发环境--引入body-parser
-    before: app => {
-      // 关键代码
-      app.use(bodyParser.json());
-      app.use(bodyParser.urlencoded({ extended: true }));
-      if (!isPRD) {
-        feMock(app);
-      }
-    } */
+    }
   },
   pluginOptions: {
     // TODO something here
