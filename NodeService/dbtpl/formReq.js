@@ -1,8 +1,3 @@
-/*********************************************************************
- * Static variable file
- * Created by deming-su on 2019/12/24
- *********************************************************************/
-
 const mockData = require("../mock/data");
 
 module.exports = app => {

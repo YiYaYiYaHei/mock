@@ -1,11 +1,6 @@
-/*********************************************************************
- * Static variable file
- * Created by deming-su on 2019/12/24
- *********************************************************************/
-
 const cabinetList = {
-    "code": 200, 
-    "description": "成功", 
+    "code": 200,
+    "description": "成功",
     "data": [
         {cabinetId: '通用机柜', cabinetType: 'ordinary', cabinetLabel: '通用机柜', cabinetWidth: 1, cabinetDeep: 1, cabinetDisX1: 0.2, cabinetDisY1: 2, cabinetDisX2: 0.2, cabinetDisY2: 2, cabinetHeight: 400, cabinetOrientation: 'X', state: 1},
         {cabinetId: '1-1-01', cabinetType: 'ordinary', cabinetLabel: '1-1-01', cabinetWidth: 1, cabinetDeep: 1, cabinetDisX1: 0.2, cabinetDisY1: 2, cabinetDisX2: 0.2, cabinetDisY2: 2, cabinetHeight: 80, cabinetOrientation: 'X', state: 2},
@@ -25,8 +20,8 @@ const cabinetList = {
 };
 
 const cabinetNetList = {
-    "code": 200, 
-    "description": "成功", 
+    "code": 200,
+    "description": "成功",
     "data": {
         height: 3, // 该机柜里U位的高:比如机柜高100米，每个U位3米，则该机柜可放置100/3（33）个U位
         row: [
