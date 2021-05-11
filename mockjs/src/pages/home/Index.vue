@@ -44,18 +44,17 @@ export default {
     async getTableData() {
       let result = await this.$api.postDataRequest('GET_LIST', {});
       console.log(result);
-      this.tableData.data = temp;
+      this.tableData.data = result.data;
     }
   },
   created() {
     this.tableData.column = [
       { label: '时间', props: 'time', filter: 'dateFormat', funcParam: ['YYYY-MM-DD hh:mm:ss', 'hahhaha', ''], sortable: true },
-      { label: '协议', props: 'proto', filter: 'fixNumber', funcParam: [] },
-      { label: '文件名称', props: 'fileName' },
-      { label: '类型', props: 'fileType' },
-      { label: '源Ip', props: 'srcIp' },
-      { label: '目的Ip', props: 'distIp' },
-      { label: '危险等级', props: 'level' }
+      { label: '协议', props: 'proto'},
+      { label: '标题', props: 'title' },
+      { label: '公司', props: 'company' },
+      { label: 'attention_degree', props: 'attention_degree' },
+      { label: 'photo', props: 'photo' }
     ]
     this.getTableData();
   },

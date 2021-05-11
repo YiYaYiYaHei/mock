@@ -25,13 +25,23 @@ import Index from './pages/Index.vue';
 
 Vue.config.productionTip = false;
 
-// 引入mockjs
-require('./mock/mock.js');
+/* 引入mockjs---start--- */
+/**
+ * require和import的区别实际就是：
+ * import是es6的写法，require是commonjs的写法，import经过babel编译后，会转化成commonjs
+ */
+
+//方式一：
+require('./mock/index.js');
+
+//方式二：
 // import "./mock/mock.js";
 
+// 方式三:
 /* if(process.env.NODE_ENV == 'development'){
   require('./mock/index')
 } */
+/* 引入mockjs---end--- */
 
 /* eslint-disable no-new */
 new Vue({

@@ -95,8 +95,7 @@ const sendRequest = async(request, urlPrefix) => {
     requestData = buildRequestData(request);
 
   /* 针对IE浏览器，避免code304读取缓存 */
-  // requestData.url = url + '?_date=' + new Date().getTime();
-  requestData.url = url;
+  requestData.url = url + '?_date=' + new Date().getTime();
 
 
   /* axios 发起请求 */

@@ -73,7 +73,7 @@ export default {
     async loginEvt() {
     	if (!this.loginData.userName || !this.loginData.userPwd) return;
       this.loading = true;
-      let result = await this.$api.getDataRequest('USER_LOGIN', {
+      let result = await this.$api.postDataRequest('USER_LOGIN', {
         userName: this.loginData.userName,
         password: SHA256.hmac(this.loginData.userName, this.loginData.userPwd)
       });
@@ -81,7 +81,7 @@ export default {
 	    if (!!result && result.status === 200) {
 		    localStorage.setItem('current_login_user_token', `Bearer ${result.data.token}`);
         this.$store.dispatch('setUserInfo', { data: result.data || {}});
-        
+
 		    this.$router.push('/home');
 	    } else {
 		    this.msg = result.message;
@@ -151,7 +151,7 @@ export default {
   created() {
     this.checkViewPort();
     this.checkVersion();
-    
+
     window.addEventListener('resize', this.checkViewPort);
   },
   destroyed() {
