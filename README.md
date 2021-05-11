@@ -54,7 +54,7 @@ Mock.mock(/\/apis\/list.*/, 'get', () => {})
 1. 安装body-parser: npm i body-parser -S
 2. <a href="https://blog.csdn.net/hl971115/article/details/92412501" target="_blank">可以在vue.config.js中直接写，但是效果不好，每次更改都要重启~</a>
 3. <a href="https://segmentfault.com/a/1190000020989763?utm_source=tag-newest" target="_blank">body-parser,需要node和NodeService差不多（暂未完成）</a>
-<a href="https://segmentfault.com/a/1190000022547716" target="_blank">body-parser配置</a>
+4. <a href="https://segmentfault.com/a/1190000022547716" target="_blank">body-parser配置</a>
 
 ***
 # 五、xl_mock
